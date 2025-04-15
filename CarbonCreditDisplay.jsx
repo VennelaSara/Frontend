@@ -10,7 +10,7 @@ const CarbonCreditDisplay = () => {
         if (userId) {
             setLoading(true);
             setError(null);
-            fetch(`http://localhost:5173/api/carbon-credits/${userId}`)
+            fetch(`https://mybackendresculpt-production.up.railway.app/api/carbon-credits/${userId}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to fetch carbon credit balance.');
