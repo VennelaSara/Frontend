@@ -21,7 +21,7 @@ const CreatorProfile = () => {
         if (creatorId) {
             // Fetch creator profile if creatorId is present (for viewing/editing)
             setLoading(true);
-            fetch(`http://localhost:5173/api/creators/${creatorId}`)
+            fetch(`https://mybackendresculpt-production.up.railway.app/api/creators/${creatorId}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to fetch creator profile.');
@@ -52,7 +52,7 @@ const CreatorProfile = () => {
             let response;
             if (creatorId) {
                 //update
-                response = await fetch(`http://localhost:5173/api/creators/${creatorId}/needs`, {
+                response = await fetch(`https://mybackendresculpt-production.up.railway.app/api/creators/${creatorId}/needs`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ const CreatorProfile = () => {
             }
             else {
                 //register
-                response = await fetch('http://localhost:3000/api/creators/register', {
+                response = await fetch('https://mybackendresculpt-production.up.railway.app/api/creators/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
