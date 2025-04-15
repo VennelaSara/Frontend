@@ -14,7 +14,7 @@ const BlockChainDisplay = () => {
         setError('');
         setBlockchainData(null);
         try {
-            const response = await fetch('http://localhost:5173/api/products/mint-nft', {
+            const response = await fetch('https://mybackendresculpt-production.up.railway.app/api/products/mint-nft', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
