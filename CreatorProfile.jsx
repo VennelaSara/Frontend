@@ -52,7 +52,7 @@ const CreatorProfile = () => {
             let response;
             if (creatorId) {
                 //update
-                response = await fetch(`http://localhost:3000/api/creators/${creatorId}/needs`, {
+                response = await fetch(`http://localhost:5173/api/creators/${creatorId}/needs`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
