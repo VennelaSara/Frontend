@@ -30,7 +30,7 @@ const WasteSubmissionForm = () => {
 
         
         try {
-            const response = await fetch('http://localhost:5173/api/waste/upload', {
+            const response = await fetch('https://mybackendresculpt-production.up.railway.app/api/waste/upload', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
