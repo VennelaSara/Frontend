@@ -25,7 +25,7 @@ const MatchingDisplay = () => {
 
     const handleAccept = async (matchId) => { // Added type annotation here
         try {
-            const response = await fetch(`http://localhost:3000/api/matches/accept/${matchId}`, {
+            const response = await fetch(`http://localhost:5173/api/matches/accept/${matchId}`, {
                 method: 'PUT',
             });
             if (!response.ok) {
@@ -47,7 +47,7 @@ const MatchingDisplay = () => {
 
     const handleReject = async (matchId) => { // Added type annotation here
         try {
-            const response = await fetch(`http://localhost:3000/api/matches/reject/${matchId}`, {
+            const response = await fetch(`http://localhost:5173/api/matches/reject/${matchId}`, {
                 method: 'PUT',
             });
             if (!response.ok) {
