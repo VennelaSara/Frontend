@@ -10,7 +10,7 @@ const RewardsDisplay = () => {
         if (userId) {
             setLoading(true);
             setError(null);
-            fetch(`http://localhost:5173/api/rewards/nfts/${userId}`)
+            fetch(`/api/matches/accept/api/rewards/nfts/${userId}`)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to fetch NFTs.');
